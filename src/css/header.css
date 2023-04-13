@@ -1,0 +1,45 @@
+.header {
+  position: fixed;
+  display: flex;
+  left: 0;
+  top: 0;
+  height: 50px;
+  align-items: center;
+  background: linear-gradient(90deg, #ff48ea, #ff61ea, #7c30ff, #c635ff);
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
+  transform: translate3d(0, 0, 0);
+}
+
+.text {
+  position: relative;
+  font-size: 42px;
+  margin: 0;
+  /* color: #181818; */
+  white-space: nowrap;
+  animation: text 10s infinite linear;
+}
+.text:after {
+  content: " VIRONIKA VODNEVA - FRONTEND - TEST - REACT - SIMPLE - APP - FORM - TODOLIST - ";
+}
+
+@keyframes text {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
