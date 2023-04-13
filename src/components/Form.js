@@ -24,29 +24,42 @@ function Form() {
   };
 
   return (
-    <div>
+    <div className="form">
+      <h2 className="form-header">form</h2>
+
       <form onSubmit={handleSubmit}>
-        <label>
-          Input 1 (string):
+        <div className="form-item">
           <input
             type="text"
+            required
             value={input1}
             onChange={(e) => setInput1(e.target.value)}
           />
-        </label>
-        <br />
-        <label>
-          Input 2 (number):
+          <label className={"label" + (input1 ? " filled" : " blank")}>
+            text
+          </label>
+        </div>
+        <div className="form-item">
           <input
             type="text"
+            required
             value={input2}
             onChange={(e) => setInput2(e.target.value)}
           />
-        </label>
-        <br />
-        <button type="submit">Submit</button>
+          <label className={"label" + (input2 ? " filled" : " blank")}>
+            number
+          </label>
+        </div>
+
+        <button type="submit">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          Submit
+        </button>
       </form>
-      {output !== "" && <p>{output}</p>}
+      {output !== "" && <p className="result">{output}</p>}
     </div>
   );
 }

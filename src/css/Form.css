@@ -1,38 +1,170 @@
-.Form {
-  text-align: center;
+.form {
+  width: 400px;
+  height: 70vh;
+  padding: 40px;
+  background: rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+
+  border-right: 2px;
+  border-left: 0;
+  border-style: solid;
+  border-image: linear-gradient(to bottom, #181818, #eee, #181818) 1 100%;
 }
 
-.Form-logo {
-  height: 40vmin;
+.form-header {
+  text-transform: uppercase;
+  margin: 0 0 30px;
+  padding: 0;
+}
+
+.form-item {
+  position: relative;
+}
+
+.form-item input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+
+.label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
   pointer-events: none;
+  transition: 0.5s;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .Form-logo {
-    animation: Form-logo-spin infinite 20s linear;
+.filled,
+.form-item input:focus ~ label {
+  top: -20px;
+  left: 0;
+  color: #7c30ff;
+  font-size: 12px;
+}
+
+input:invalid {
+  color: red;
+}
+.result {
+  overflow-wrap: anywhere;
+  overflow: scroll;
+  max-height: 25vh;
+}
+
+.form form button {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #ff61ea;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: 0.5s;
+  margin-top: 40px;
+  letter-spacing: 4px;
+}
+
+.form button:hover {
+  background: #ff61ea;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #ff61ea, 0 0 25px #ff61ea, 0 0 50px #ff61ea,
+    0 0 100px #ff61ea;
+}
+
+.form button span {
+  position: absolute;
+  display: block;
+}
+
+.form button span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #ff61ea);
+  animation: btn-anim1 1s linear infinite;
+}
+
+@keyframes btn-anim1 {
+  0% {
+    left: -100%;
+  }
+  50%,
+  100% {
+    left: 100%;
   }
 }
 
-.Form-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.form button span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #ff61ea);
+  animation: btn-anim2 1s linear infinite;
+  animation-delay: 0.25s;
 }
 
-.Form-link {
-  color: #61dafb;
-}
-
-@keyframes Form-logo-spin {
-  from {
-    transform: rotate(0deg);
+@keyframes btn-anim2 {
+  0% {
+    top: -100%;
   }
-  to {
-    transform: rotate(360deg);
+  50%,
+  100% {
+    top: 100%;
+  }
+}
+
+.form button span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #ff61ea);
+  animation: btn-anim3 1s linear infinite;
+  animation-delay: 0.5s;
+}
+
+@keyframes btn-anim3 {
+  0% {
+    right: -100%;
+  }
+  50%,
+  100% {
+    right: 100%;
+  }
+}
+
+.form button span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #ff61ea);
+  animation: btn-anim4 1s linear infinite;
+  animation-delay: 0.75s;
+}
+
+@keyframes btn-anim4 {
+  0% {
+    bottom: -100%;
+  }
+  50%,
+  100% {
+    bottom: 100%;
   }
 }
