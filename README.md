@@ -1,3 +1,24 @@
+# Tasks
+
+## ReactJS Front-end - Question 1:
+
+Create a simple React app with two input fields and a submit button. The first input field should accept a string
+and the second should accept a number. On clicking the submit button, display the inputted string repeated the
+number of times specified in the second input field, in a new paragraph below the form. Ensure proper
+validation and error handling for the inputs.
+
+
+## ReactJS Front-end - Question 2:
+
+Implement a simple to-do list application in React. The application should allow users to add and delete
+items from the list. The list items should be stored in the component&#39;s state. Demonstrate the use of
+React hooks to manage state and handle user actions.
+
+## Result: 
+<img width="1440" alt="Screenshot 2023-04-14 at 03 20 38" src="https://user-images.githubusercontent.com/49586977/231912140-75ea4441-2350-49fb-8a8b-b75562bc4369.png">
+
+
+# 
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
