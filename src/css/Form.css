@@ -63,7 +63,7 @@ input:invalid {
   max-height: 25vh;
 }
 
-.form form button {
+.form-button {
   position: relative;
   display: inline-block;
   padding: 10px 20px;
@@ -77,7 +77,7 @@ input:invalid {
   letter-spacing: 4px;
 }
 
-.form button:hover {
+.form-button:hover {
   background: #ff61ea;
   color: #fff;
   border-radius: 5px;
@@ -85,12 +85,12 @@ input:invalid {
     0 0 100px #ff61ea;
 }
 
-.form button span {
+.form-button span {
   position: absolute;
   display: block;
 }
 
-.form button span:nth-child(1) {
+.form-button span:nth-child(1) {
   top: 0;
   left: -100%;
   width: 100%;
@@ -109,7 +109,7 @@ input:invalid {
   }
 }
 
-.form button span:nth-child(2) {
+.form-button span:nth-child(2) {
   top: -100%;
   right: 0;
   width: 2px;
@@ -129,7 +129,7 @@ input:invalid {
   }
 }
 
-.form button span:nth-child(3) {
+.form-button span:nth-child(3) {
   bottom: 0;
   right: -100%;
   width: 100%;
@@ -149,7 +149,7 @@ input:invalid {
   }
 }
 
-.form button span:nth-child(4) {
+.form-button span:nth-child(4) {
   bottom: -100%;
   left: 0;
   width: 2px;

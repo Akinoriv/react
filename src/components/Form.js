@@ -31,7 +31,6 @@ function Form() {
         <div className="form-item">
           <input
             type="text"
-            required
             value={input1}
             onChange={(e) => setInput1(e.target.value)}
           />
@@ -42,7 +41,6 @@ function Form() {
         <div className="form-item">
           <input
             type="text"
-            required
             value={input2}
             onChange={(e) => setInput2(e.target.value)}
           />
@@ -51,7 +49,7 @@ function Form() {
           </label>
         </div>
 
-        <button type="submit">
+        <button className="form-button" type="submit">
           <span></span>
           <span></span>
           <span></span>

@@ -29,6 +29,6 @@ button {
   display: flex;
   align-items: center;
   width: 100%;
-  justify-content: space-evenly;
+  justify-content: center;
   margin: auto;
 }
